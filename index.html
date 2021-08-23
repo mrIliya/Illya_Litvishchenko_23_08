@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Movies</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+
+    <body>
+        <!-- movies -->
+        <section class="movies">
+            <div class="movies-filter">
+                <select class="movies-filter__select">
+                  <!-- render options -->
+                </select>
+                <div class="movies-view">
+                    <span class="movies-view__descr">view as:</span>
+                    <button class="movies-view__btn" id="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                    <button class="movies-view__btn active" id="columns">
+							<i class="fas fa-border-none"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="movies__inner">
+                <div class="movies-container">
+						<!-- movies -->
+                </div>
+                <!-- favorites -->
+                <div class="favorites">
+                    <div class="favorites-top">
+                        <i class="favorites-top__icon fas fa-star"></i>
+                        <h2 class="favorites-top__title">Favorite List</h2>
+                    </div>
+                    <ul class="favorites__list">
+                       <!-- render favorite movie -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- modal -->
+        <section class="modal">
+			  <!-- movie info content -->           
+        </section>
+
+        <script type="module" src="./index.js"></script>
+    </body>
+
+</html>
